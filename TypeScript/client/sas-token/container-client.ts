@@ -3,7 +3,7 @@ import { ContainerClient } from '@azure/storage-blob';
 
 // For development environment - include environment variables
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME as string;
 if (!accountName) throw Error('Azure Storage accountName not found');

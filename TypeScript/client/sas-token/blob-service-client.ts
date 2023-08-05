@@ -1,7 +1,7 @@
 // connect-with-sas-token.js
 import { BlobServiceClient } from '@azure/storage-blob';
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
 const sasToken = process.env.AZURE_STORAGE_SAS_TOKEN;

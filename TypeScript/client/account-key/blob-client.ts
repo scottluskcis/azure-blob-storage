@@ -8,7 +8,7 @@ import {
 
 // For development environment - include environment variables from .env
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 // Azure Storage resource name
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME as string;

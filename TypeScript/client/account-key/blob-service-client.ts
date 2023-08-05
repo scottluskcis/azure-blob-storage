@@ -5,7 +5,7 @@ import {
 } from '@azure/storage-blob';
 import * as dotenv from 'dotenv';
 import path from 'path';
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME as string;
 const accountKey = process.env.AZURE_STORAGE_ACCOUNT_KEY as string;

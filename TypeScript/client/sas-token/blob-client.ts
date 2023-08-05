@@ -30,7 +30,7 @@ import {
 
 // used for local environment variables
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '../../.env' });
 
 // Get BlobServiceClient
 import { getBlobServiceClientFromDefaultAzureCredential } from './auth-get-client';
