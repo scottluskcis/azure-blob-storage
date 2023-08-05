@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@azure/storage-blob": "^12.15.0",
+    "typescript": "^5.1.6"
+  }
 }
